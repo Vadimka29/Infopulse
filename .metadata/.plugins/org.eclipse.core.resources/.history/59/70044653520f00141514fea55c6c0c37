@@ -1,0 +1,12 @@
+
+public class Lection8 {
+	public static void main(String[] args){
+		CaesarCipher cc = new CaesarCipher(1,' ','я');
+		String msg = "hi";
+		String enc = cc.encode(msg);
+		String dec = cc.decode(enc);
+		System.out.println(dec);
+		//System.out.println((int)Character.MIN_VALUE);
+		//System.out.println((int) Character.MAX_VALUE);
+	}
+}

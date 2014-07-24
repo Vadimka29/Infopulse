@@ -1,0 +1,6 @@
+
+public class Methods {
+	public static SinglyLinkedList<Integer> getDivisors(){
+		
+	}
+}

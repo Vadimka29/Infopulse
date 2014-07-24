@@ -1,0 +1,17 @@
+import java.io.*;
+
+public class Fuck {
+	public static void main(String[] args){
+		File f = new File("/home/vadim/Загрузки/kursach_slivka.docx");
+		System.out.println(f.exists());
+		try(FileReader fr = new FileReader(f)){
+			int c;
+			while((c = fr.read()) != -1)
+				System.out.print((char) c);
+			
+		} catch(IOException e){
+			System.out.println("error " + e);
+		}
+		
+	}
+}

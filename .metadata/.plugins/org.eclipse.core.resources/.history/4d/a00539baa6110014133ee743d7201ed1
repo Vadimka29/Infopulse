@@ -1,0 +1,9 @@
+
+public class Task8 {
+	public static void main(String[] args){
+		QStack<Integer> si = new QStack<>();
+		si.push(1);
+		si.push(2);
+		si.push(3);
+	}
+}

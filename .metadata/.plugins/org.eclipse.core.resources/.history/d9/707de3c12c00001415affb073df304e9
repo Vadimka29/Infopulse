@@ -1,0 +1,8 @@
+
+public class Example {
+	int n;
+	public Example(int n) {
+		// TODO Auto-generated constructor stub
+		this.n = n;
+	}
+}

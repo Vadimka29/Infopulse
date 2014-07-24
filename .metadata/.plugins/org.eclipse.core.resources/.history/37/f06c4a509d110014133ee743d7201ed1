@@ -1,0 +1,16 @@
+
+public class Task8 {
+	public static void main(String[] args){
+		/*MyQueue<String> q = new MyQueue<>();
+		q.enqueue("1");
+		q.enqueue("2");
+		q.enqueue("3");
+		System.out.println();*/
+		String a[];
+		a = (String[]) new Object[8];
+		for(int i = 0; i < a.length; i++){
+			a[i] = "" + i;
+			System.out.println(a[i]);
+		}
+	}
+}

@@ -1,0 +1,7 @@
+
+public class Example {
+	int i;
+	public Example(int i) {
+		this.i = i;
+	}
+}

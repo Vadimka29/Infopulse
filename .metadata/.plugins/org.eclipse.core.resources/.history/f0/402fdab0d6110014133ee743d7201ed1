@@ -1,0 +1,6 @@
+
+public class Methods {
+	public void subsets(int n){
+		
+	}
+}

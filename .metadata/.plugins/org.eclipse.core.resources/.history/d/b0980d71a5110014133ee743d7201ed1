@@ -1,0 +1,39 @@
+
+public class QStack<E> implements IStack<E> {
+	private int size;
+	private MyQueue<E> q;
+	
+	public QStack(){
+		q = new MyQueue<>();
+	}
+	@Override
+	public E pop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void push(E s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public E peek() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return size;
+	}
+
+	@Override
+	public boolean empty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

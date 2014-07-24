@@ -1,0 +1,7 @@
+
+public class Lection8 {
+	public static void main(String[] args){
+		StringBuffer[] sbm = {new StringBuffer("c"), new StringBuffer("a")};
+		
+	}
+}

@@ -1,0 +1,8 @@
+
+public class Lection8 {
+	public static void main(String[] args){
+		String[] array = {"cde","abc"};
+		Methods.sort(array);
+		System.out.println(array.toString());
+	}
+}

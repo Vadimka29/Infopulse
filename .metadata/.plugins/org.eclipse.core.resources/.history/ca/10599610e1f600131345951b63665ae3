@@ -1,0 +1,9 @@
+import java.io.File;
+
+public class Methods {
+
+	public static void Directory(){
+		File f = new File("/media/vadim/12EAE1C3EAE1A369");
+		System.out.println(f.exists());
+	}
+}

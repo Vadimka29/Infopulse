@@ -1,0 +1,38 @@
+
+public class QStack<E> implements IStack<E> {
+	private int size;
+	private MyQueue<E> q;
+	
+	public QStack(){
+		q = new MyQueue<>();
+	}
+	@Override
+	public int size() {
+		return size;
+	}
+	@Override
+	public boolean isEmpty() {
+		return size == 0;
+	}
+	@Override
+	public void push(E e) {
+		q.enqueue(e);
+		size ++;
+	}
+	@Override
+	public E pop() {
+		if(isEmpty())
+			throw new RuntimeException("QStack is empty");
+		for(int i = 0; i < q.size() - 1; i++){
+			q.enqueue(q.dequeue());
+			size --;
+			return q.dequeue();
+		}
+	}
+
+	@Override
+	public E peek() {
+		return null;
+	}
+
+}

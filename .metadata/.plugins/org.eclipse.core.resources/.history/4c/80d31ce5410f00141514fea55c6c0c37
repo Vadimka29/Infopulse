@@ -1,0 +1,37 @@
+
+public class SinglyLinkedList<E> {
+	private SlNode<E> head, tail;
+	//для учета длинны списка
+	private int size;
+	
+	public SinglyLinkedList(){
+		head = new SlNode<E>(null);
+		tail = new SlNode<E>(null);
+		head.setNext(tail);
+	}
+	public void addFirst(E e){
+		SlNode<E> newOne = new SlNode<E>(e);
+		SlNode<E> oldFirst = head.getNext();
+		head.setNext(newOne);
+		newOne.setNext(oldFirst);
+		size ++;
+	}
+	public E removeFirst(){
+		if(isEmpty())
+			throw new RuntimeException("list is empty");
+		SlNode<E> oldFirst = head.getNext();
+		head.setNext(oldFirst.getNext());
+		oldFirst.setNext(null);
+		size --;
+		return oldFirst;
+	}
+	//add last element
+	public void addLast(E e){
+	}
+	public int size() {
+		return size;
+	}
+	public boolean isEmpty(){
+		return size() == 0;
+	}
+}

@@ -1,0 +1,24 @@
+
+public class Methods {
+	public void subsets(int n){
+		MyQueue<Integer> q = new MyQueue<>();
+		QStack<String> st = new QStack<>();
+		StringBuilder sb = new StringBuilder("[");
+		for(int i = 0; i < (int)Math.pow(2.0, n); i++){
+			q.enqueue(i);
+		}
+		for(int i = 0; i < (int) Math.pow(2.0, n); i++){
+			st.push(Integer.toBinaryString(i));
+		}
+		while(!st.isEmpty()){
+			StringBuilder sb = new StringBuilder("[");
+			for(int i = 0; i < st.peek().length(); i++){
+				if(st.peek().charAt(i) == 1){
+					Integer temp = q.dequeue();
+					q.enqueue(temp);
+					sb.append(temp + ", ");
+				}
+			}
+		}
+	}
+}

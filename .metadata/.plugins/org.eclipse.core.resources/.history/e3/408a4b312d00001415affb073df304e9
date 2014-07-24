@@ -1,0 +1,21 @@
+
+public class Example {
+	int n;
+	public Example(int n) {
+		// TODO Auto-generated constructor stub
+		this.n = n;
+	}
+	@Override
+	public Example clone(){
+		return new Example(n);
+	}
+	@Override
+	public String toString(){
+		return "" + n;
+	}
+	@Override
+	public boolean equals(Object temp){
+		boolean res = (temp.n == this.n)?  true : false;
+		return res;
+	}
+}

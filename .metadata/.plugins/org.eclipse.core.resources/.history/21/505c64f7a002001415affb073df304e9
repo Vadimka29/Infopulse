@@ -1,0 +1,12 @@
+import java.io.*;
+
+public class Fuck {
+	public static void main(String[] args){
+		int i =  128;
+		Integer a = i;
+		System.out.println(a);
+		Integer b = i;
+		System.out.println(b);
+		System.out.println(a == b);
+	}
+}

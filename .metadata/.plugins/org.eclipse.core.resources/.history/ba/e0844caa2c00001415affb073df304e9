@@ -1,0 +1,10 @@
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
+
+
+
+public class Fuck {
+	public static void main(String[] args){
+		Example t = new Example(5);
+		Example p = t.
+	}
+}

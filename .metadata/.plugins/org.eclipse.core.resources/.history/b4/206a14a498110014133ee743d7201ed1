@@ -1,0 +1,4 @@
+
+public class QStack implements IStack<E> {
+
+}

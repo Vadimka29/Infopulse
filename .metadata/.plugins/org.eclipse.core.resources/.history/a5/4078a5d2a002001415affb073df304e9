@@ -1,0 +1,10 @@
+import java.io.*;
+
+public class Fuck {
+	public static void main(String[] args){
+		int i =  127;
+		Integer a = i;
+		Integer b = i;
+		System.out.println(a == b);
+	}
+}

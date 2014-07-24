@@ -1,0 +1,10 @@
+import java.io.File;
+
+public class Methods {
+
+	public static void Directory(){
+		String path = "/media/vadim/12EAE1C3EAE1A369";
+		File f = new File(path+"/a");
+		System.out.println("Directory exists: " + f.exists());
+		}
+	}

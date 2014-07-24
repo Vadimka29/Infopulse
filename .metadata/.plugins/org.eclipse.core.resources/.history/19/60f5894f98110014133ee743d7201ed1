@@ -1,0 +1,8 @@
+
+public interface IStack<E> {
+	E pop();
+	void push(E e);
+	E peek();
+	int size();
+	boolean empty();
+}

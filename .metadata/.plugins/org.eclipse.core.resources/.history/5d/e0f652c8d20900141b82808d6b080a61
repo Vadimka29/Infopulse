@@ -1,0 +1,41 @@
+import java.awt.*;
+
+import javax.swing.*;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+//Если запустим таким образом приложение, тогда произойдет утечка памяти
+//Если закроем окно, нажав на крестик, тогда закроется окно, но останется в памяти компьютера
+public class Win extends JFrame {
+	private JButton button;
+	public static void main(String[] args){
+		Win w = new Win();
+		w.setVisible(true);
+	}
+	public Win(){
+		setBounds(10, 10, 500, 400);
+		//для закрытия окна и извлечения его из памяти
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		//Вывести дату месяц и год вверху окна
+		GregorianCalendar g = new GregorianCalendar();
+		int y = g.get(Calendar.YEAR);
+		int m = g.get(Calendar.MONTH);
+		int d = g.get(Calendar.DATE);
+		setTitle("Date: " + d  +" Month: " +  (m + 1)+ " Year: " + y);
+		//открыть окно на весь экран
+		setExtendedState(MAXIMIZED_BOTH);
+		//закрасить форму
+		//нужно правильно обратиться к окну, не трогая контекстное меню и заголовок
+		Container cnt = getContentPane();
+		cnt.setLayout(new GridLayout(3,3));
+		cnt.setBackground(new Color(255, 200, 250));
+		button = new JButton();
+		add(new JLabel());
+		add(new JLabel());
+		add(new JLabel());
+
+		add(new JLabel());
+		add(button);
+	}
+}

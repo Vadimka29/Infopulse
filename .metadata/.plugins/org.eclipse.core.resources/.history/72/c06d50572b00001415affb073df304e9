@@ -1,0 +1,9 @@
+
+public class Example {
+	int n = 5;
+	
+	@Override
+	public String toSring(){
+		return "" + n;
+	}
+}

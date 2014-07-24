@@ -1,0 +1,5 @@
+
+//Generic Class
+public class SlNode<E> {
+	private E element;
+}

@@ -1,0 +1,18 @@
+
+public class SinglyLinkedList<E> {
+	private SlNode<E> head, tail;
+	//для учета длинны списка
+	private int size;
+	
+	public SinglyLinkedList(){
+		head = new SlNode<E>(null);
+		tail = new SlNode<E>(null);
+		head.setNext(tail);
+	}
+	public void addFirst(E e){
+		SlNode<E> newOne = new SlNode<E>(e);
+	}
+	public int getSize() {
+		return size;
+	}
+}

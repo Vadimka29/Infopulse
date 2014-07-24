@@ -1,0 +1,59 @@
+
+public class MyQueue<E> {
+	private Object[] m;
+	private int start, end; //end >= start
+	
+	@SuppressWarnings("unchecked")
+	public MyQueue(){
+		m = (E[]) new Object[8];
+	}
+	
+	public void enqueue(E s){
+		if(size() >= m.length)
+			resize();
+		m[realIndex(end)] = s;
+		end ++;
+	}
+	public E dequeue(){
+		if(isEmpty())
+			throw new RuntimeException("Queue is empty");
+		E r = m[realIndex(start)];
+		start ++;
+		return r;
+	}
+	public String toString(){
+		StringBuffer buff = new StringBuffer();
+		for(int i = start; i < end; i ++){
+			buff.append(m[realIndex(i)]);
+			buff.append(", ");
+		}
+		return buff.toString();
+	}
+	public int size(){
+		return end - start;
+	}
+	public boolean isEmpty(){
+		return size() == 0;
+	}
+	public E front(){
+		if(isEmpty())
+			throw new RuntimeException("Queue is empty");
+		return m[realIndex(start)];
+	}
+	
+	//служебные методы
+	private int realIndex(int index){
+		return (index % m.length);
+	}
+	private int realIndex(int index, int N){
+		return (index % N);
+	}
+	private void resize(){
+		@SuppressWarnings("unchecked")
+		E[] n = (E[])new Object[m.length*2];
+		for(int i = start; i < end; i++){
+			n[realIndex(i,n.length)] = m[realIndex(i)];
+		}
+		m = n;
+	}
+}

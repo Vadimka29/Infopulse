@@ -1,0 +1,13 @@
+
+public class Methods {
+	public void subsets(int n){
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0; i < (int)Math.pow(2.0, n); i++){
+			sb.append(i);
+		}
+		String s;
+		for(int i = 0; i < (int)Math.pow(2.0, n); i++){
+			s = new String(Integer.toBinaryString(i));
+		}
+	}
+}

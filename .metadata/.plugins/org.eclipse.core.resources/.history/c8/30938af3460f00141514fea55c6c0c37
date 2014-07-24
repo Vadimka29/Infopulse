@@ -1,0 +1,11 @@
+
+public class Methods {
+	public static SinglyLinkedList<Integer> getAllDivisors(int digit){
+		SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
+		for(int i = 1 ; i <= digit; i++){
+			if(digit % i == 0)
+				list.addLast(i);
+		}
+		return list;
+	}
+}

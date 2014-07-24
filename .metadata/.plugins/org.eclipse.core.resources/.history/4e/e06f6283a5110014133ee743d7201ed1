@@ -1,0 +1,33 @@
+
+public class QStack<E> implements IStack<E> {
+	private int size;
+	private MyQueue<E> q;
+	
+	public QStack(){
+		q = new MyQueue<>();
+	}
+	@Override
+	public boolean empty() {
+		return false;
+	}
+	@Override
+	public E pop() {
+		return null;
+	}
+
+	@Override
+	public void push(E s) {
+		
+	}
+
+	@Override
+	public int size() {
+		return size;
+	}
+
+	@Override
+	public E peek() {
+		return null;
+	}
+
+}

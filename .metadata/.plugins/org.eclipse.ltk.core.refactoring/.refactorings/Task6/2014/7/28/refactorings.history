@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;SyntaxAnalyzer.fillSets()&apos; to &apos;fillMap&apos;&#x0A;- Original project: &apos;Task6&apos;&#x0A;- Original element: &apos;SyntaxAnalyzer.fillSets()&apos;&#x0A;- Renamed element: &apos;SyntaxAnalyzer.fillMap()&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;fillSets&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{SyntaxAnalyzer.java[SyntaxAnalyzer~fillSets" name="fillMap" references="true" stamp="1404908417553" version="1.0"/>
+</session>

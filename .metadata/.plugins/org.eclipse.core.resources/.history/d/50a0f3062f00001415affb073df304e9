@@ -1,0 +1,9 @@
+
+public class Fuck {
+	public static void main(String[] args){
+		Rename t = new Rename(5);
+		Rename p = t.clone();
+		System.out.println(p);
+		System.out.println(p.equals(t));
+	}
+}

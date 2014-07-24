@@ -1,0 +1,7 @@
+
+public interface IStack<E> {
+		E pop();
+		String peek();
+		int size();
+		boolean empty();
+	}

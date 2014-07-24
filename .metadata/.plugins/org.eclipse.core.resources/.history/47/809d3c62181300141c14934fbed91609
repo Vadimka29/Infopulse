@@ -1,0 +1,23 @@
+
+public class Task8 {
+	public static void main(String[] args){
+		//Task 1 QStack
+		QStack<Integer> si = new QStack<>();
+		si.push(1);
+		si.push(2);
+		si.push(3);
+		System.out.println(si);
+		System.out.println("top of stack: " + si.peek() + "\nsize: " + si.size() + 
+				"\nwithout top: ");
+		si.pop();
+		System.out.println(si);
+		si.clear();
+		System.out.println(si);
+		//Task 2 Subsets
+		System.out.println("__________Subsets: __________");
+		Methods.subsets(3);
+		
+		//Task 3 isEqual for Circle lists
+		
+	}
+}

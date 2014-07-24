@@ -1,0 +1,14 @@
+
+public class Task8 {
+	public static void main(String[] args){
+		//Task 1 QStack
+		QStack<Integer> si = new QStack<>();
+		si.push(1);
+		si.push(2);
+		si.push(3);
+		System.out.println(si);
+		System.out.println("top of stack: " + si.peek() + "\nsize: " + si.size() + 
+				"without top: ");
+		System.out.println(si);
+	}
+}

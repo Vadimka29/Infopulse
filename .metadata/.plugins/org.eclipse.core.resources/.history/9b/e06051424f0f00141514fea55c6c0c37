@@ -1,0 +1,18 @@
+
+public class Cezar {
+	private CircleList<Character> cl;
+	//сдвиг
+	private int shift;
+	
+	public Cezar(int sh){
+		shift = sh;
+		cl = new CircleList<>();
+		for(char temp = 'z'; temp >= 'a'; temp--){
+			cl.addFirst(temp);
+		}
+	}
+	private char encode(char c){
+		int dif = c - 'a';
+		return cl.getNode(dif - shift);
+	}
+}

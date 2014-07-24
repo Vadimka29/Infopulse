@@ -1,0 +1,38 @@
+
+public class CaesarCipher {
+	private CircleList<Character> cl;
+	//сдвиг
+	private int shift;
+	private final char min = Character.MIN_VALUE;
+	private final char max = Character.MAX_VALUE;
+	
+	public CaesarCipher(int sh){
+		shift = sh;
+		cl = new CircleList<>();
+		for(char temp = min; temp <= max; temp++){
+			cl.addFirst(temp);
+		}
+	}
+	public String encode(String s){
+		String toReturn = "";
+		for(char temp: s.toCharArray()){
+			toReturn += encode(temp);
+		}
+		return toReturn;
+	}
+	public String decode(String s){
+		String toReturn = "";
+		for(char temp: s.toCharArray()){
+			toReturn += decode(temp);
+		}
+		return toReturn;
+	}
+	private char decode(char c){
+		int dif = c - 'a';
+		return cl.getNode(dif - shift);
+	}
+	private char encode(char c){
+		int dif = c - 'a';
+		return cl.getNode(dif + shift);
+	}
+}

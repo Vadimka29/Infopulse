@@ -1,0 +1,33 @@
+
+public class Methods {
+	public static void subsets(int n){
+		MyQueue<Integer> q = new MyQueue<>();
+		QStack<String> st = new QStack<>();
+		for(int i = 1; i <= n; i++){
+			q.enqueue(i);
+		}
+		//Correct
+		for(int i = (int) (Math.pow(2.0, n)-1); i >=0; i--){
+			st.push(Integer.toBinaryString(i));
+		}
+		//Correct
+		while(!st.isEmpty()){
+			StringBuilder sb = new StringBuilder("[");
+			//correct
+			System.out.println(st.peek());
+			for(int i = st.peek().length() - 1; i >= 0 ; i--){
+				if(st.peek().charAt(i) == '1'){
+					Integer temp = q.dequeue();
+					//System.out.println(temp);
+					q.enqueue(temp);
+					sb.append(temp + ", ");
+				}
+				else
+					q.enqueue(q.dequeue());
+			}
+			st.pop();
+			sb.append("]");
+			//System.out.println(sb.toString());
+		}
+	}
+}

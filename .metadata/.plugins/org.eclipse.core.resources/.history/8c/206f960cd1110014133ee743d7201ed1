@@ -1,0 +1,7 @@
+
+public class Methods {
+	public void subsets(int n){
+		int sub[] = new int[(int) Math.pow(2.0, n)];
+		
+	}
+}

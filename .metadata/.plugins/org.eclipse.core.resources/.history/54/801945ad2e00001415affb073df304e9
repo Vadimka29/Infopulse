@@ -1,0 +1,9 @@
+
+public class Fuck {
+	public static void main(String[] args){
+		ua.vadim.Example t = new Example(5);
+		Example p = t.clone();
+		System.out.println(p);
+		System.out.println(p.equals(t));
+	}
+}

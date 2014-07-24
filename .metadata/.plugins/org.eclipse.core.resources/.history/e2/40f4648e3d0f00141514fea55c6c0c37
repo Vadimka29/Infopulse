@@ -1,0 +1,6 @@
+
+//Generic Class
+public class SLNode<E> {
+	private E element;
+	private SlNode<E> next;
+}
