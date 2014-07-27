@@ -1,2 +1,9 @@
+//BranchProjectTracker__/home/vadim/git/Infopulse/.git_33bf579b36c4c16591f44fc1f54f58125c1a8bfa=<?xml version\="1.0" encoding\="UTF-8"?>\n<projects branch\="33bf579b36c4c16591f44fc1f54f58125c1a8bfa">\n<project>/</project>\n</projects>
+//BranchProjectTracker__/home/vadim/git/Infopulse/.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\n<projects branch\="master">\n<project>/</project>\n</projects>
+//BranchProjectTracker__/media/vadim/0484FD0484FCF8CE/Infopulse/.git_c2494c7c7ddbc538f2866e3f081843ea9bf836d0=<?xml version\="1.0" encoding\="UTF-8"?>\n<projects branch\="c2494c7c7ddbc538f2866e3f081843ea9bf836d0"/>
+//BranchProjectTracker__/media/vadim/0484FD0484FCF8CE/Infopulse/.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\n<projects branch\="master"/>
+StagingView_ShowNewCommits=true
 StagingView_SyncWithSelection=false
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>lal</message>\n<message>lala</message>\n<message>autogame</message>\n<message>Initial commit&\#x0A;</message>\n</messages>
 eclipse.preferences.version=1
+show_initial_config_dialog=false
