@@ -1,0 +1,8 @@
+
+public class Temp {
+	public static void main(String[] args){
+		String j = "Java";
+		String p = "Python";
+		System.out.printf("%1#s",j,p);
+	}
+}

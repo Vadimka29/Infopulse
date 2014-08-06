@@ -1,0 +1,11 @@
+
+public class DoublyLinkedList<E> {
+	private DlNode<E> head;
+	private DlNode<E> tail;
+	private int size;
+	
+	public DoublyLinkedList(){
+		head = new DlNode<DoublyLinkedList.E>(null, this);
+		
+	}
+}

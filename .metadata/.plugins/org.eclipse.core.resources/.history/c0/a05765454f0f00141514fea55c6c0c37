@@ -1,9 +1,0 @@
-
-public class Lection8 {
-	public static void main(String[] args){
-		CircleList<Character> circleList = new CircleList<>();
-		for(char ch = 'z'; ch >= 'a'; ch--)
-			circleList.addFirst(ch);
-		System.out.println(circleList);
-	}
-}

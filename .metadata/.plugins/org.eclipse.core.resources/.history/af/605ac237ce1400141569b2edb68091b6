@@ -1,0 +1,10 @@
+import java.util.LinkedList;
+
+public class Lection9 {
+	public static void main(String[] args){
+		String[] ps = {"Washington","Adams", "Monroe", "Bush"};
+		//использование итератора
+		LinkedList<String> lst = new LinkedList<>();
+		for(Strin)
+	}
+}

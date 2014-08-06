@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Lection9 {
+	public static void main(String[] args){
+		//использование итератора
+		ArrayList<String> lst = new ArrayList<>();
+		String[] ps = {"Vashington","Adams", "Monroe", "Bush"};
+		for(String t: ps){
+			lst.add(t);
+		}
+		System.out.println(lst);
+		Iterator<String> it = lst.iterator();
+		for(String t: lst){
+			System.out.println(t);
+		}
+	}
+}

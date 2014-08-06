@@ -1,0 +1,7 @@
+
+public class DoublyLinkedList<E> {
+	private DlNode<E> head;
+	private DlNode<E> tail;
+	
+	
+}

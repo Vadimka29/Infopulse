@@ -1,12 +1,12 @@
 
 public class Lection9 {
 	public static void main(String[] args){
-		DoublyLinkedList<Integer> lst = new DoublyLinkedList<>();
+		DoublyLinkedList<Integer> dll = new DoublyLinkedList<>();
+		System.out.println(dll);
 		for(int i = 0; i < 10; i++){
-			lst.addLast(i);
+			dll.addLast(i);
 		}
-		for (Integer integer : lst) {
-			System.out.println(integer);
-		}
+		dll.addAfter(dll.first(), 10);
+		System.out.println(dll);
 	}
 }

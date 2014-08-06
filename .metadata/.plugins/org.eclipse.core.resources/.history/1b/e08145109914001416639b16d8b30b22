@@ -1,0 +1,12 @@
+import java.util.GregorianCalendar;
+import java.util.Locale;
+
+public class Temp {
+	public static void change(String a){
+		a = new String("lala");
+	}
+	public static void main(String[] args){
+		String temp = "Java";
+		change(a);
+	}
+}

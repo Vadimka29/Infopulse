@@ -1,0 +1,19 @@
+
+public class Lection9 {
+	public static void main(String[] args){
+		DoublyLinkedList<Integer> dll = new DoublyLinkedList<>();
+		for(int i = 0; i < 30; i++){
+			dll.addLast((int) (Math.random()*1001));
+		}
+		System.out.println(dll);
+		
+		DlNode<Integer> c = dll.first();
+		DlNode<Integer> next;
+		while(c != null){
+			next = dll.next(c);
+			if(c.getElement() % 2 == 0)
+				dll.remove(c);
+			c = next;
+		}
+	}
+}

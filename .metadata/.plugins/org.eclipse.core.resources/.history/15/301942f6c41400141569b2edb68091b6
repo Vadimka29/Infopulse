@@ -1,0 +1,19 @@
+
+public class Lection9 {
+	public static void main(String[] args){
+		String temp[] = new String[10];
+		for(int i = 0; i < 10; i++){
+			temp[i] = "" + i;
+		}
+		DoublyLinkedList<String> dll = new DoublyLinkedList<>();
+		for(String t: temp){
+			dll.addLast(t);
+		}
+		System.out.println(dll);
+		DlNode<String> c = dll.first();
+		while(c != null){
+			System.out.println(c.getElement());
+			c = c.getNext();
+		}
+	}
+}

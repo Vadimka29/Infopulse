@@ -1,0 +1,10 @@
+
+public class SimpleIter {
+	private int[] m = {1,2,3,4,5};
+	private int index;
+	
+	public boolean hasNext(){
+		return index < m.length;
+		
+	}
+}

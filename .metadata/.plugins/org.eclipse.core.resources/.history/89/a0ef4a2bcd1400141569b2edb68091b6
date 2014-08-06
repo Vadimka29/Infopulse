@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+
+public class Lection9 {
+	public static void main(String[] args){
+		ArrayList<String> lst = new ArrayList<>();
+		
+	}
+}

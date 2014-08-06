@@ -1,0 +1,11 @@
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class Temp {
+	public static void main(String[] args){
+		long a = System.currentTimeMillis();
+		GregorianCalendar gc = new GregorianCalendar();
+		gc.set(Calendar.MONTH, 0);
+		System.out.printf("%th", a);
+	}
+}

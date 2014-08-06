@@ -1,0 +1,14 @@
+
+public class DlNode<E> {
+	private E element;
+	private DlNode<E> next;
+	private DlNode<E> prev;
+	
+	public E getElement(){
+		return element; 
+	}
+	public void setElement(E e){
+		element = e;
+	}
+	
+}

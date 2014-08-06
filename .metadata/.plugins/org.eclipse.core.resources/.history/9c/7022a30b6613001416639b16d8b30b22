@@ -1,0 +1,8 @@
+
+public class Temp {
+	public static void main(String[] args){
+		int i = Integer.MIN_VALUE;
+		i = i >> 1;
+		System.out.println(Integer.toBinaryString(i));
+	}
+}

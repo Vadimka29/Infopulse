@@ -1,6 +1,0 @@
-
-public class Cezar {
-	private CircleList<Character> cl;
-	private int shift;
-	
-}

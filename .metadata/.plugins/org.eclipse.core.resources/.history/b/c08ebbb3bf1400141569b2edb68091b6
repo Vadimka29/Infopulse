@@ -1,0 +1,23 @@
+
+public class DoublyLinkedList<E> {
+	private DlNode<E> head;
+	private DlNode<E> tail;
+	private int size;
+	
+	public DoublyLinkedList(){
+		head = new DlNode<E>(null, this);
+		tail = new DlNode<E>(null, this);
+		head.setNext(tail);
+		tail.setPrev(head);
+	}
+	
+	public int size(){
+		return size;
+	}
+	//необходим для операций удаления(для проверки есть ли вообще что удалять)
+	public boolean isEmpty(){
+		return size == 0;
+	}
+	
+	
+}

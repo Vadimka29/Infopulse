@@ -1,0 +1,9 @@
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class Temp {
+	public static void main(String[] args){
+		GregorianCalendar gc = new GregorianCalendar(1980,0,15);
+		System.out.println(gc.get(Calendar.MONTH));
+	}
+}

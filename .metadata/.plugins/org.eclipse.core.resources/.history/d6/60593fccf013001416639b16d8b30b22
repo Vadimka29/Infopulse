@@ -1,0 +1,13 @@
+import java.util.GregorianCalendar;
+import java.util.Locale;
+
+public class Temp {
+	public static void main(String[] args){
+		long a = System.currentTimeMillis();
+		GregorianCalendar gc = new GregorianCalendar();
+		
+		for(int i = 0; i < 10; i++){
+			System.out.println( + "\t"  + (i + 1));
+		}
+	}
+}

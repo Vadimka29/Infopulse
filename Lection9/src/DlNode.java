@@ -1,5 +1,5 @@
 
-public class DlNode<E> {
+public class DlNode<E> implements IContainer<E> {
 	private Object owner;
 	private E element;
 	private DlNode<E> next;

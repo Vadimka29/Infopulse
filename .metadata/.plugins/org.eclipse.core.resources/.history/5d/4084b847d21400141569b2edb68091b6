@@ -1,0 +1,9 @@
+
+public class Lection9 {
+	public static void main(String[] args){
+		SimpleIter si = new SimpleIter();
+		for(int t: si){
+			System.out.print(t);
+		}
+	}
+}
