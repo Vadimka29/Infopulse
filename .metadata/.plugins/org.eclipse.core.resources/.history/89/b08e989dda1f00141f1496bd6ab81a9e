@@ -1,0 +1,5 @@
+package geomtest;
+
+public class Point3D {
+	
+}

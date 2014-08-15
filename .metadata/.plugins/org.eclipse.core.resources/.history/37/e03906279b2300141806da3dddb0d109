@@ -1,0 +1,20 @@
+import arraytree.*;
+
+
+public class Task11 {
+	public static void main(String[] args){
+		/*ArrayBinTree<Integer> tree = new ArrayBinTree<>(10);
+		tree.addRoot(10);
+		tree.insert(5);
+		tree.insert(4);
+		tree.insert(6);
+		tree.insert(15);
+		tree.insert(12);
+		tree.insert(16);
+		Iterator<Integer> it = tree.iterator();
+		while(it.hasNext()){
+			System.out.println(it.next());
+		}*/
+		Node<Integer>[] array = new Object[10];
+	}
+}

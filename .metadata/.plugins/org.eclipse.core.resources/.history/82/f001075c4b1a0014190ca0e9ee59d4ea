@@ -1,0 +1,7 @@
+
+public enum Lang {
+	EN, RU, UKR
+	public String weekDay(Lang l){
+		
+	}
+};

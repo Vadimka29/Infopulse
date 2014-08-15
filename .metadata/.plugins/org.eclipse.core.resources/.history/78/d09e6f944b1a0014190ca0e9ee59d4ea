@@ -1,0 +1,7 @@
+
+public enum City {
+	
+	public City(int){
+		
+	}
+}

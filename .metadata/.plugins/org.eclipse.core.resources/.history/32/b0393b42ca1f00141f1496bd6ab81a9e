@@ -1,0 +1,10 @@
+import tree.*;
+import list.*;
+
+
+public class Lection11 {
+	public static void main(String[] args){
+		LinkedBinTree<Integer> bt = new LinkedBinTree<>();
+		bt.addRoot(10);
+	}
+}

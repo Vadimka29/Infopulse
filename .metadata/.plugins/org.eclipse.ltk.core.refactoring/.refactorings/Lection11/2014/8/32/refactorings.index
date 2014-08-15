@@ -1,0 +1,7 @@
+1407586625356	Encapsulate field 'left'
+1407586632048	Encapsulate field 'right'
+1407586636193	Encapsulate field 'parent'
+1407587555355	Rename type 'BinaryTree'
+1407591367752	Rename local variable 'binaryTree'
+1407593989850	Delete element
+1407594720350	Rename type 'Traverse'

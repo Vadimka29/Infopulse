@@ -1,0 +1,14 @@
+import tree.*;
+import list.*;
+
+
+public class Lection11 {
+	public static void main(String[] args){
+		LinkedBinTree<Integer> bt = new LinkedBinTree<>();
+		System.out.println(bt);
+		IContainer<Integer> r = bt.addRoot(10);
+		IContainer<Integer> i5 =  bt.insertLeft(r, 5);
+		//bt.insertRight(r, 15);
+		System.out.println(bt);
+	}
+}

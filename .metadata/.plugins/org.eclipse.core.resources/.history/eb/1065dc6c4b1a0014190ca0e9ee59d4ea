@@ -1,0 +1,16 @@
+
+public enum Lang {
+	EN, RU, UKR;
+	
+	public String weekDay(Lang l){
+		switch (l) {
+		case EN:
+			
+			
+			break;
+
+		default:
+			break;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package arraytree;
+
+public class Node<E extends Comparable<E>> implements IContainer<E> {
+	private E element;
+	
+	@Override
+	public E getElement() {
+		return element;
+	}
+	
+}

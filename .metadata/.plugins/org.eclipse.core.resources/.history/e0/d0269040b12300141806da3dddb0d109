@@ -1,0 +1,27 @@
+import java.util.Iterator;
+
+import arraytree.*;
+
+
+public class Task11 {
+	public static void main(String[] args){
+		
+		//********** TASK 2: ArrayBinTree **********
+		System.out.println("__________TASK 2: ArrayBinTree__________");
+		System.out.println();
+		ArrayBinTree<Integer> tree = new ArrayBinTree<>(Integer.class);
+		tree.addRoot(10);
+		tree.insert(5);
+		tree.insert(4);
+		tree.insert(6);
+		tree.insert(15);
+		tree.insert(12);
+		tree.insert(16);
+		tree.insert(7);
+		Iterator<Integer> it = tree.iterator();
+		System.out.println("height: ");
+		while(it.hasNext()){
+			System.out.print(it.next() + " ");
+		}
+	}
+}

@@ -1,0 +1,23 @@
+import javax.swing.JDialog;
+
+
+
+public class Lection10 {
+	public static String cityInfo(City city){
+		//заполнять ведущими нулями и ширина поля 3 символа
+		String temp = String.format("%03d", city.getCode());
+		return "our office in " + city + ", phone prefix: " + temp; 
+	}
+	public static void main(String[] args){
+		//информация о городе
+		String info = cityInfo(City.KYIV);
+		System.out.println(info);
+		
+		//проверка качества входных данных
+		System.out.println(City.isValidPrefix(36));
+		System.out.println(City.isValidCity("Kyiv"));
+		System.out.println(Lang.getYes(Lang.UA));
+		JDialog dialog = new JDialog();
+		dialog.show();
+	}
+}

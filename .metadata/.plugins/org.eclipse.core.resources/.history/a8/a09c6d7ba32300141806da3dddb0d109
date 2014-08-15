@@ -1,0 +1,109 @@
+package arraytree;
+
+import java.util.Arrays;
+import java.util.Iterator;
+
+public class ArrayBinTree<E extends Comparable<E>> implements Iterable<E>{
+	private int size;
+	private Node<E>[] array;
+	
+	@SuppressWarnings("unchecked")
+	public ArrayBinTree(){
+		//array = (Node<E>[]) new Object[10];
+		array = (Node<E>[]) new Object[10];
+	}
+	@SuppressWarnings("unchecked")
+	public ArrayBinTree(int capacity){
+		array = (Node<E>[]) new Object[capacity];
+	}
+	private IContainer<E> check(Node<E> node){
+		return (IContainer<E>) node;
+	}
+	public void addRoot(E e){
+		if(array[0] != null){
+			throw new RuntimeException("Root is already exists!");
+		}
+		Node<E> root = new Node<>(e);
+		array[0] = root;
+		size ++;
+	}
+	public IContainer<E> find(E key) {
+		int index = 0;
+		IContainer<E> current = check(array[index]);
+		while (current.getElement().compareTo(key) != 0) {
+			if (current.getElement().compareTo(key) > 0) {
+				current = check(array[index * 2 + 1]);
+				index = index*2 + 1;
+			} else {
+				current = check(array[index * 2 + 2]);
+				index = index * 2 + 2;
+			}
+			if(current == null)
+				return null;
+		}
+		return current;
+	}
+	private void resize(){
+		array = Arrays.copyOf(array, array.length * 3);
+	}
+	public void insert(E e){
+		if(size >= array.length/3)
+			resize();
+		Node<E> node = new Node<>(e);
+		int index = 0;
+		int parentIndex = 0;
+		//if root doesn't exist
+		if(array[0] == null){
+			array[0] = node;
+			size ++;
+		}
+		else {
+			Node<E> current = array[index];
+			while(true){
+				parentIndex = index;
+				if(e.compareTo(current.getElement()) < 0){
+					current = array[index*2 + 1];
+					index = index*2 + 1;
+					if(current == null){
+						array[parentIndex*2 + 1] = node;
+						size ++;
+						return;
+					}
+				}
+				else{
+					current = array[index*2 + 2];
+					index = index*2 + 2;
+					if(current == null){
+						array[parentIndex*2 + 2] = node;
+						size ++;
+						return;
+					}
+				}
+			}
+		}
+	}
+	public void traverse(){
+		
+	}
+	@Override
+	public Iterator<E> iterator() {
+		DoublyLinkedList<E> list = new DoublyLinkedList<>();
+		preorder(0, list);
+		return list.iterator();
+	}
+	private void preorder(int index, DoublyLinkedList<E> lst){
+		if(array[index] == null)
+			return;
+		lst.addLast(array[index].getElement());
+		if(array[index*2 + 1] != null)
+			preorder(index*2 + 1,lst);
+		if(array[index*2 + 2] != null)
+			preorder(index*2 + 2, lst);
+	}
+	public int size(){
+		return size;
+	}
+	public boolean isEmpty(){
+		return size == 0;
+	}
+}

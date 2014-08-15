@@ -1,0 +1,9 @@
+
+public enum City {
+	private int code;
+	
+	
+	public City(int code){
+		this.code = code;
+	}
+}

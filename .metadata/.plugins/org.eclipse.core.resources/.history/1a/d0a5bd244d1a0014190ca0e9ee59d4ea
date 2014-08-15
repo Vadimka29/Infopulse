@@ -1,0 +1,18 @@
+
+public enum City {
+	KYIV(44), LONDON(2),PARIS(1);
+	
+	private int code;
+	
+	private City(int code){
+		this.code = code;
+	}
+	public int getCode(){
+		return code;
+	}
+	public static isValidPrefix(int pr){
+		//массив всех значений - метод values
+		City[] ct = City.values();
+		
+	}
+}

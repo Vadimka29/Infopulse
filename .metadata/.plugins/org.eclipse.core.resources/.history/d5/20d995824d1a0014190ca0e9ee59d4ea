@@ -1,0 +1,12 @@
+
+public class Lection10 {
+	public static String cityInfo(City city){
+		return "our office in " + city + ", phone prefix: " + city.getCode(); 
+	}
+	public static void main(String[] args){
+		String info = cityInfo(City.KYIV);
+		System.out.println(info);
+		
+		System.out.println(City.isValidPrefix(45));
+	}
+}

@@ -1,0 +1,15 @@
+import arraytree.ArrayBinTree;
+
+
+public class Task11 {
+	public static void main(String[] args){
+		ArrayBinTree<Integer> tree = new ArrayBinTree<>();
+		tree.addRoot(10);
+		tree.insert(5);
+		tree.insert(4);
+		tree.insert(6);
+		tree.insert(15);
+		tree.insert(12);
+		tree.insert(16);
+	}
+}

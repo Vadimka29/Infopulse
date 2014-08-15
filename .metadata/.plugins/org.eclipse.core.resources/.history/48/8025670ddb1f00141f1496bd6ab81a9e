@@ -1,0 +1,6 @@
+package geomtest;
+import geom.*;
+
+public class Point3D extends Point {
+	
+}

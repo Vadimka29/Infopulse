@@ -1,0 +1,8 @@
+
+public enum Lang {
+	EN, UA,FR;
+	
+	static String getYes(Lang l){
+		
+	}
+}

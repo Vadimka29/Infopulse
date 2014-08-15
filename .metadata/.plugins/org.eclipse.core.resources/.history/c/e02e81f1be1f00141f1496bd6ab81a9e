@@ -1,0 +1,12 @@
+package tree;
+
+public class BTNode<E> {
+	private E element;
+	
+	public BTNode(E e){
+		element = e;
+	}
+	public E getElement(){
+		return element;
+	}
+}

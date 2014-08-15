@@ -1,0 +1,34 @@
+import java.util.Iterator;
+
+import tree.LinkedBinTree;
+import arraytree.*;
+
+
+public class Task11 {
+	public static void main(String[] args){
+		LinkedBinTree<Integer> lb = new LinkedBinTree<>(
+				LinkedBinTree.Traversal.INORDER);
+		System.out.println(lb);
+		IContainer<Integer> r = lb.addRoot(10);
+		IContainer<Integer> i5 = lb.insertLeft(r, 5);
+		IContainer<Integer> i6 = lb.insertRight(r, 15);
+		lb.insertLeft(i5, 2);
+		lb.insertRight(i5, 7);
+		lb.insertLeft(i6, 12);
+		lb.insertRight(i6, 30);
+		
+		/*ArrayBinTree tree = new ArrayBinTree(10);
+		tree.addRoot("f");
+		tree.insert("a");
+		tree.insert("g");
+		tree.insert("b");
+		tree.insert("z");
+		tree.insert("e");
+		tree.insert("p");
+		Iterator<String> it = tree.iterator();
+		while(it.hasNext()){
+			System.out.println(it.next());
+		}*/
+		
+	}
+}

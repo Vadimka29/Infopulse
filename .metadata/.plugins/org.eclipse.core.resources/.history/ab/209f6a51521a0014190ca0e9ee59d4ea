@@ -1,0 +1,11 @@
+
+public enum Lang {
+	EN, UA,FR;
+	
+	public static String getYes(Lang l){
+		String[] m = {"Yes", "Так", "Oui"};
+		//ordinal - порядковый номер константы в enum
+		return m[l.ordinal()];
+		
+	}
+}
