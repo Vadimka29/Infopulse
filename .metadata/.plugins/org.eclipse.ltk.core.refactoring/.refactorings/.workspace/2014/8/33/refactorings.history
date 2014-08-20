@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;WindowsApp&apos; to &apos;Win2&apos;&#x0A;- Original element: &apos;WindowsApp&apos;&#x0A;- Renamed element: &apos;WindowsApp&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;WindowsApp&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=WindowsApp" name="Win2" references="true" stamp="1408199556325" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package filters;
+
+import java.io.FileFilter;
+
+public class FormatFilter implements FileFilter {
+	public FormatFilter() {
+		
+	}
+}

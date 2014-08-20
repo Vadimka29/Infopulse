@@ -15,12 +15,12 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ex" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tasks" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection7" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/task6" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Model" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Task6" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/task6" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AutoGame" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Task6" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection4" type="4"/>
-<item elementID="=Lection8" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection8" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1406030341048_1" label="Window Working Set" name="Aggregate for window 1406030341048"/>

@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.ArrayList;
+
+public class Lection12 {
+	public static void main(String[] args){
+		ArrayList<Integer> list = new ArrayList<>();
+		String path = new String("/media/vadim/0484FD0484FCF8CE/file.bin");
+		try(FileOutputStream fs = 
+				new FileOutputStream(path);
+				ObjectOutputStream oos = new ObjectOutputStream(fs)){
+			oos.writeBoolean(true);
+			oos.writeDouble(Math.PI);
+			oos.writeObject("Java");
+			oos.close();
+			FileInputStream fis = new FileInputStream(path);
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			System.out.println(ois.readBoolean());
+			System.out.println(ois.readDouble());
+			System.out.println(ois.readObject());
+		}
+		catch(Exception e){
+			System.out.println(e.getStackTrace());
+		}
+		
+	}
+}

@@ -1,0 +1,6 @@
+import java.io.FileFilter;
+
+
+public class Filter implements FileFilter {
+	
+}

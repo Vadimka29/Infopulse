@@ -1,0 +1,13 @@
+import java.io.*;
+
+public class Lection12 {
+	public static void main(String[] args){
+		try(File f = new File("/media/vadim/0484FD0484FCF8CE/file.bin");
+				FileOutputStream fs = new FileOutputStream(file)){
+			
+		}
+		catch(Exception e){
+			System.out.println(e.getStackTrace());
+		}
+	}
+}

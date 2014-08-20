@@ -1,0 +1,12 @@
+import java.io.Serializable;
+
+
+public class Sotr implements Serializable {
+	private String name;
+	private int[] s;
+	
+	public Sotr(String name, int[] s){
+		this.name = name;
+		this.s = s;
+	}
+}

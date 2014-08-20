@@ -14,8 +14,9 @@ public class Lection11 {
 		lb.insertLeft(i5, 2);
 		lb.insertRight(i5, 7);
 		lb.insertLeft(i6, 12);
-		lb.insertRight(i6, 30);
-		//System.out.println(lb);
+		//lb.insertRight(i6, 30);
+		System.out.println(lb);
+		System.out.println("Proper ?:  " + lb.isProper(lb.root()));
 		lb.print();
 		Point3D p3 = new Point3D(3, 4, 5);
 		System.out.println(p3);

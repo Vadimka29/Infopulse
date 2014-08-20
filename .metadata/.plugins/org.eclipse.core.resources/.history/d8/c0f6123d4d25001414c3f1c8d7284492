@@ -1,0 +1,16 @@
+package filters;
+
+import java.io.FileFilter;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class DirsWithLastModified implements FileFilter {
+	private GregorianCalendar c1;
+	private GregorianCalendar c2;
+	
+	public DirsWithLastModified(){
+		c1 = new GregorianCalendar();
+		c2 = new GregorianCalendar();
+		c2.set(Calendar.DATE, 10);
+	}
+}

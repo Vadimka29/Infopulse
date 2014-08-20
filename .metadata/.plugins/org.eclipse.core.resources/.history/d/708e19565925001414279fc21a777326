@@ -1,0 +1,49 @@
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+class MyThread extends Thread{
+	private JFrame frame;
+	public MyThread(JFrame frame) {
+		this.frame = frame;
+	}
+	public void run() {
+		for (int i = 1; i < 999 /* 1e5 */; i++) {
+			frame.setTitle("i = " + i);
+		}
+		frame.setTitle("i = " + 0);
+	}
+}
+
+public class Win2 extends JFrame implements ActionListener {
+	public static void main(String[] a){
+		Win2 w = new Win2();
+	}
+	private Container cnt;
+	public Win2(){
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setBounds(400,200, 500, 400);
+		this.setTitle("Thread Example");
+		JButton bt = new JButton("Press me");
+		JTextField tf = new JTextField();
+		JLabel jl = new JLabel("Word: ");
+		bt.addActionListener(this);
+		cnt = this.getContentPane();
+		new BorderLayout();
+		cnt.setLayout(null);
+		bt.setBounds(200,150, 100,100);
+		tf.setBounds(100,100,200,100);
+		tf.setText("c/windows");
+		jl.setBounds(0,0, 100,100);
+		cnt.add(bt);
+		cnt.add(tf);
+		cnt.add(jl);
+		setVisible(true);
+	}
+	@Override
+	public void actionPerformed(ActionEvent event) {
+		MyThread thread = new MyThread(this);
+		thread.start();
+	}
+}

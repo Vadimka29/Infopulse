@@ -1,0 +1,77 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import javax.swing.*;
+
+class MyThread extends Thread{
+	private JFrame frame;
+	public MyThread(JFrame frame) {
+		this.frame = frame;
+	}
+	public void run() {
+		for (int i = 1; i < 999 /* 1e5 */; i++) {
+			frame.setTitle("i = " + i);
+		}
+	}
+}
+
+public class Win2 extends JFrame implements ActionListener {
+	public static void main(String[] a){
+		Win2 w = new Win2();
+	}
+	private int r;
+	private int g;
+	private int b;
+	private Container cnt;
+	private JButton bt;
+	Timer tm;
+	
+	private String addZero(int x){
+		return (x < 10) ? "0" + x: "" + x;
+		}
+	public Win2(){
+		tm = new Timer(100, this);
+		tm.start();
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setBounds(400,200, 500, 400);
+		this.setTitle("Thread Example");
+		bt = new JButton("Press me");
+		JTextField tf = new JTextField();
+		JLabel jl = new JLabel("Word: ");
+		bt.addActionListener(this);
+		cnt = this.getContentPane();
+		new BorderLayout();
+		cnt.setLayout(null);
+		bt.setBounds(200,150, 100,100);
+		tf.setBounds(100,100,200,100);
+		tf.setText("c/windows");
+		jl.setBounds(0,0, 100,100);
+		cnt.add(bt);
+		cnt.add(tf);
+		cnt.add(jl);
+		setVisible(true);
+		setTitle(tf.getText());
+	}
+	@Override
+	public void actionPerformed(ActionEvent event) {
+		Object src = event.getSource();
+		if(src == bt){
+			MyThread t = new MyThread(this);
+			t.start();
+		}
+		if(src == tm){
+			GregorianCalendar gc = new GregorianCalendar();
+			Color c = new Color(r,g,b);
+			cnt.setBackground(c);
+			r = (int)(Math.random()*256);
+			g = (int)(Math.random()*256);
+			b = (int)(Math.random()*256);
+			/*int  h = gc.get(Calendar.HOUR);
+			int min = gc.get(Calendar.MINUTE);
+			int sec = gc.get(Calendar.SECOND);
+			setTitle(addZero(h) + ":" + addZero(min) + ":" + addZero(sec));*/
+		}
+	}
+}

@@ -170,6 +170,22 @@ public class LinkedBinTree<E> implements Iterable<E> {
 		if(hasRight(c))
 			inorder(right(c), list);
 	}
+	//правильное ли дерево
+	public boolean isProper(IContainer<E> c){
+		boolean status = true;
+		DoublyLinkedList<IContainer<E>> list = new DoublyLinkedList<>();
+		rightLeft(c, list);
+		Iterator<IContainer<E>> it = list.iterator();
+		while(it.hasNext()){
+			IContainer<E> temp = it.next();
+			if(isInternal(temp)){
+				if(! (hasLeft(temp) && hasRight(temp))){
+					status = false;
+				}
+			}
+		}
+		return status;
+	}
 	public void print(){
 		Iterator<IContainer<E>> it = containers();
 		while(it.hasNext()){
