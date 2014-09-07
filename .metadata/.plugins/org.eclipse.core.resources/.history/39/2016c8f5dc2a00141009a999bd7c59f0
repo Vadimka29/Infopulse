@@ -1,0 +1,17 @@
+import java.io.IOException;
+
+
+public class DStrTest {
+	int max;
+	
+	Appendable ap;
+	public DStrTest(int m, Appendable a){
+		max = m;
+		ap = a;
+	}
+	public void run() throws IOException{
+		for(int i = 1; i <= max; i++){
+			ap.append("a");
+		}
+	}
+}

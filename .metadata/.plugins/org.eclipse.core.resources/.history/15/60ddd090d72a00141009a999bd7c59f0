@@ -1,0 +1,12 @@
+
+public class Lection13 {
+	public static void main(String[] args){
+		
+	}
+	class T extends Thread{
+		int maxl
+		public T(int mx, String name){
+			
+		}
+	}
+}

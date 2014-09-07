@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;arraytree&apos; to &apos;Task13/src&apos;&#x0A;- Original project: &apos;Task11&apos;&#x0A;- Destination element: &apos;Task13/src&apos;&#x0A;- Original element: &apos;Task11/src/arraytree&apos;" description="Copy package" destination="=Task13/src" element1="/src&lt;arraytree" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1409229289356" version="1.0"/>
+</session>

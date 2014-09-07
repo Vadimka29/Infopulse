@@ -2,6 +2,8 @@ package arraytree;
 
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.lang.reflect.Array;
 
 public class ArrayBinTree<E extends Comparable<E>> implements Iterable<E>{
@@ -78,7 +80,21 @@ public class ArrayBinTree<E extends Comparable<E>> implements Iterable<E>{
 		}
 	}
 	public void traverse(){
-		
+		int root = 0;
+		int leftChild = 2*root + 1;
+		int rightChild = 2*root + 2;
+		Queue<Integer> q = new PriorityQueue<>();
+		q.add(root);
+		while(!q.isEmpty()){
+			int x = q.remove();
+			System.out.print(array[x] + "\t");
+			if(array[leftChild] != null){
+				q.add(leftChild);
+			}
+			if(array[rightChild] != null){
+				q.add(rightChild);
+			}
+		}
 	}
 	@Override
 	public Iterator<E> iterator() {

@@ -31,6 +31,7 @@ public class Task11 {
 		tree.insert(12);
 		tree.insert(16);
 		tree.insert(7);
+		tree.traverse();
 		Iterator<Integer> it = tree.iterator();
 		System.out.println("preorder traverse");
 		while(it.hasNext()){

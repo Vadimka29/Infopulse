@@ -1,0 +1,13 @@
+package tree;
+
+import java.util.Comparator;
+
+public class Heap<E> {
+	protected CompleteBinTree<E> tree;
+	protected Comparator<E> comp;
+	
+	public Heap(Comparator<E> c){
+		comp = c;
+		tree = new CompleteBinTree<>();
+	}
+}

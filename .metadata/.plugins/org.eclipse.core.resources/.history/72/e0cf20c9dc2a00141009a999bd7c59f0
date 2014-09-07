@@ -1,0 +1,10 @@
+
+public class DStrTest {
+	int max;
+	
+	Appendable ap;
+	public DStrTest(int m, Appendable a){
+		max = m;
+		ap = a;
+	}
+}

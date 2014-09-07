@@ -5,6 +5,14 @@ import geomtest.Point3D;
 
 public class Lection11 {
 	public static void main(String[] args){
+		CompleteBinTree<String> cbt = new CompleteBinTree<>();
+		Heap<Integer> hp = new Heap<>(new IntCmp());
+		//System.out.println(cbt);
+		for(int i = 0; i < 19; i++){
+			hp.insert((int) (Math.random()*101));
+		}
+		hp.print();
+		/*
 		LinkedBinTree<Integer> lb = new LinkedBinTree<>
 			(LinkedBinTree.Traversal.INORDER);
 		System.out.println(lb);
@@ -25,6 +33,8 @@ public class Lection11 {
 				new Point(3,4)};
 		for(Point p: array){
 			System.out.println(p);
-		}
+		}*/
+		
 	}
+	
 }

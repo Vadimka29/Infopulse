@@ -1,0 +1,26 @@
+package tree;
+
+import java.util.Comparator;
+
+public class Heap<E> {
+	protected CompleteBinTree<E> tree;
+	protected Comparator<E> comp;
+	
+	public Heap(Comparator<E> c){
+		comp = c;
+		tree = new CompleteBinTree<>();
+	}
+	public int size(){
+		return tree.size();
+	}
+	public boolean isEmpty(){
+		return tree.isEmpty();
+	}
+	public void print(){
+		tree.print();
+	}
+	@Override
+	public String toString(){
+		
+	}
+}

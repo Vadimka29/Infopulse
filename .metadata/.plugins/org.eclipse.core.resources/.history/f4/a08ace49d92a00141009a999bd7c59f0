@@ -1,0 +1,23 @@
+
+public class Lection13 {
+	public static void main(String[] args){
+		Thread a = new T(10_000,"a");
+		Thread b = new T(10_000,"\tb");
+		a.start();
+		b.start();
+	}
+}
+class T extends Thread{
+	int max;
+	//каждому потоку можем давать имя
+	public T(int mx, String name){
+		max = mx;
+		setName(name);
+	}
+	@Override
+	public void run(){
+		for(int i = 0; i < max; i++){
+			System.out.println(getName() + " :" + i );
+		}
+	}
+}
