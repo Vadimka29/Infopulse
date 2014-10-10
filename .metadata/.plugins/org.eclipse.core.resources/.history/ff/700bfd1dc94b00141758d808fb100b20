@@ -1,0 +1,4 @@
+
+public class MyEntry<K,V> implements IEntry<K, V> {
+	
+}

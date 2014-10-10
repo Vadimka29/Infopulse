@@ -1,0 +1,24 @@
+
+public class MyEntry<K,V> implements IEntry<K, V> {
+	protected K k;
+	protected V v;
+	
+	public MyEntry(K k, V v){
+		this.k = k;
+		this.v = v;
+	}
+
+	@Override
+	public K getKey() {
+		return k;
+	}
+
+	@Override
+	public V getValue() {
+		return v;
+	}
+	@Override
+	public String toString(){
+		return "k = " + k + " v = " + v;
+	}
+}

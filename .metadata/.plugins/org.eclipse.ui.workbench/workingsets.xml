@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1406219596564_3" label="Homework" name="Homework">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Task5" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lect5" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/NewLect3" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection5" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Example1" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Task8" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Game" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tasks3" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lect3" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection6" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Task7" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ex" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tasks" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection7" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Model" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/task6" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AutoGame" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Task6" type="4"/>
+<item elementID="=Lect3" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Task5" type="4"/>
+<item elementID="=Lection7" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Task8" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection4" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection8" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tasks3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/NewLect3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lect5" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/task6" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection5" type="4"/>
+<item elementID="=Task7" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tasks" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Game" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Model" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Lection" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Example1" type="4"/>
+<item elementID="=Lection6" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AutoGame" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Task6" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1406030341048_1" label="Window Working Set" name="Aggregate for window 1406030341048"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1406114345648_2" label="Window Working Set" name="Aggregate for window 1406114345648"/>
@@ -29,5 +29,4 @@
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1407181947780_4" label="Window Working Set" name="Aggregate for window 1407181947779"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1407182029303_5" label="Window Working Set" name="Aggregate for window 1407182029303"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1407261508575_6" label="Window Working Set" name="Aggregate for window 1407261508575"/>
-<mruList name="Homework"/>
 </workingSetManager>

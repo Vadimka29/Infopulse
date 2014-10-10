@@ -1,0 +1,21 @@
+
+public class MyEntry<K,V> implements IEntry<K, V> {
+	protected K k;
+	protected V v;
+	
+	public MyEntry<K, V>(K k, V v){
+		
+	}
+
+	@Override
+	public K getKey() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public V getValue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

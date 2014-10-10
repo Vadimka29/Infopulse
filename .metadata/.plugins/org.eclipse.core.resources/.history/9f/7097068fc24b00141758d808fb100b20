@@ -1,0 +1,8 @@
+
+public class SPoint {
+	private int x,y;
+	
+	public SPoint(){
+		
+	}
+}

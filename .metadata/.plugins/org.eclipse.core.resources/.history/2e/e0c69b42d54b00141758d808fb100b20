@@ -1,0 +1,94 @@
+
+public class HashTable<K, V> {
+	protected IEntry<K, V>[] bucket;
+	protected int size;
+	protected final IEntry<K, V> AVAIL = new MyEntry<>(null, null);
+	protected boolean alreadyEx;
+	protected enum MODE {PUT, GR};
+	public HashTable(){
+		//массив из интерфейсов можно преобразовать в массив
+		bucket = (IEntry<K, V>[]) new IEntry[97];
+	}
+	public int size(){
+		return size;
+	}
+	public boolean isEmpty(){
+		return size == 0;
+	}
+	protected boolean isPrimy(int x){
+		for(int i = 2; i < x/2; i++){
+			if(x % i == 0)
+				return false;
+		}
+		return true;
+	}
+	protected int nextPrimy(int x){
+		boolean goOn = true;
+		do {
+			x ++;
+			if(isPrimy(x))
+				goOn = false;
+		} while(goOn);
+		return x;
+	}
+	protected int hashCode(K k, int len){
+		int code = k.hashCode();
+		//compression function
+		return Math.abs(code % len);
+	}
+	protected void rehashIfNeeded(){
+		if((double) size / bucket.length < 0.5)
+			return;
+		IEntry<K, V>[] n = (IEntry<K, V>[]) new IEntry[nextPrimy(bucket.length*2)];
+		for(IEntry<K, V> t: bucket){
+			if(t == null)
+				continue;
+			//записать в новый массив
+			n[hashCode(t.getKey(), n.length)] = t;
+			bucket = n;
+		}
+	}
+		public void put(K k, V v) {
+			rehashIfNeeded();
+			int ind = hashCode(k, bucket.length);
+			if(bucket[ind]!= null)
+				throw new RuntimeException("Collizion");
+			bucket[ind] = new MyEntry<>(k, v);
+			size ++;
+		}
+		public V get(K k){
+			int ind = hashCode(k, bucket.length);
+			return (bucket[ind] == null) ? null : bucket[ind].getValue();
+		}
+		public V remove(K k){
+			int ind = hashCode(k, bucket.length);
+			if(bucket[ind] != null){
+				V old = bucket[ind].getValue();
+				bucket[ind] = null;
+				size --;
+				return old;
+			}
+			return null;
+		}
+		
+		protected int findCell(K key, MODE mode){
+			int ind = hashCode(key, bucket.length);
+			for(int i = 0; i < bucket.length; i++){
+				ind = (ind + i) % bucket.length;
+				switch(mode){
+				case PUT:
+					if(bucket[ind] == null || bucket[ind])
+				}
+			}
+		}
+		@Override
+		public String toString(){
+			String toReturn = "";
+			for(IEntry<K, V> t: bucket){
+				if(t == null)
+					continue;
+				toReturn += "\n" + t;
+			}
+			return "HashTab[" + toReturn + "\n]";
+		}
+	}

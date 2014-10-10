@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="UkrCoin"/>
-<fullyQualifiedTypeName name="DoublyLinkedList"/>
-<fullyQualifiedTypeName name="Methods"/>
-<fullyQualifiedTypeName name="QStack"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="tree.Traversal"/>
-<fullyQualifiedTypeName name="tree.LinkedBinTree.Traversal"/>
-<fullyQualifiedTypeName name="tree.Traverse"/>
-<fullyQualifiedTypeName name="tree.LinkedBinTree.Traverse"/>
 <fullyQualifiedTypeName name="list.DoublyLinkedList"/>
 <fullyQualifiedTypeName name="geom.Point"/>
 <fullyQualifiedTypeName name="geomtest.Point3D"/>
@@ -23,7 +14,6 @@
 <fullyQualifiedTypeName name="arraytree.DoublyLinkedList"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="arraytree.IContainer"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="filters.FileOnly"/>
 <fullyQualifiedTypeName name="java.io.FilenameFilter"/>
@@ -42,7 +32,6 @@
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="tree.LinkedBinTree"/>
-<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="tree.CompleteBinTree"/>
 <fullyQualifiedTypeName name="tree.BTNode"/>
@@ -60,4 +49,15 @@
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="DStrTest"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="SPoint"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="IEntry"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT"/>
+<fullyQualifiedTypeName name="MyEntry"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="HashTable"/>
 </qualifiedTypeNameHistroy>

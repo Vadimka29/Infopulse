@@ -1,0 +1,5 @@
+
+public class MyEntry<K,V> implements IEntry<K, V> {
+	protected K k;
+	protected V v;
+}
